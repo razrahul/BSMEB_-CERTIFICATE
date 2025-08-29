@@ -1,0 +1,273 @@
+:root {
+  font-size: 16px;
+}
+
+.certificate-molvi-art {
+  position: relative;
+  width: 21.2cm; // A4 width at 96dpi
+  height: 29cm; // A4 height at 96dpi
+  margin: 0 auto;
+    background-image: url("../../assets/faq-marksheet.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Times New Roman', serif;
+  color: #000;
+  overflow: hidden;
+  box-sizing: border-box;
+  page-break-after: avoid;
+
+
+  //ms no & yaer
+  .ms_no {
+    top: 5.4rem;
+    right: 6.3rem;
+    position: absolute;
+  }
+  .year {
+    top: 21rem;
+    right: 10rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    position: absolute;
+  }
+
+  // Personal Info
+  .tex-dec {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .tex-dec1 {
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  .name {
+    top: 23.5rem;
+    left: 17rem;
+    position: absolute;
+  }
+
+  .father-name {
+    top: 25.5rem;
+    left: 17rem;
+    position: absolute;
+  }
+
+  .mother-name {
+    top: 27.5rem;
+    left: 17rem;
+    position: absolute;
+  }
+
+  .registration-no {
+    top: 29.5rem;
+    left: 17rem;
+    position: absolute;
+  }
+
+  .roll-no {
+    top: 29.5rem;
+    left: 35rem;
+    position: absolute;
+  }
+
+  .madrasa {
+    top: 31.5rem;
+    left: 17rem;
+    position: absolute;
+  }
+
+  .dob {
+    top: 34.3rem;
+    left: 17rem;
+    position: absolute;
+  }
+
+  // // Marks Section
+  // .diniyat1 { top: 410px; left: 635px; position: absolute; }
+  // .diniyat2 { top: 435px; left: 635px; position: absolute; }
+  // .diniyat3 { top: 460px; left: 635px; position: absolute; }
+  // .total { top: 485px; left: 635px; position: absolute; }
+
+  // .arabic { top: 515px; left: 635px; position: absolute; }
+  // .urdu { top: 540px; left: 635px; position: absolute; }
+  // .socialstudy { top: 565px; left: 635px; position: absolute; }
+  // .mathematics { top: 590px; left: 635px; position: absolute; }
+  // .science { top: 615px; left: 635px; position: absolute; }
+
+  // .hindi, .english, .persian {
+  //   top: 640px;
+  //   left: 635px;
+  //   position: absolute;
+  // }
+
+  .diniyat1 {
+    top: 38.5rem;
+    left: 32rem;
+    position: absolute;
+  }
+
+  .diniyat2 {
+    top: 40.3rem;
+    left: 32rem;
+    position: absolute;
+  }
+
+  .total-diniyat {
+    top: 42rem;
+    left: 32rem;
+    position: absolute;
+  }
+
+  .urdu {
+    top: 43.7rem;
+    left: 32rem;
+    position: absolute;
+  }
+  .persian {
+    top: 45.4rem;
+    left: 32rem;
+    position: absolute;
+  }
+
+  .arabic {
+    top: 47.2rem;
+    left: 32rem;
+    position: absolute;
+  }
+
+  .hindi {
+    top: 48.9rem;
+    left: 32rem;
+    position: absolute;
+  }
+  .english {
+    top: 50.6rem;
+    left: 32rem;
+    position: absolute;
+  }
+
+  .socialstudy {
+    top: 52.3rem;
+    left: 32rem;
+    position: absolute;
+  }
+
+  .mathematics {
+    top: 54rem;
+    left: 32rem;
+    position: absolute;
+  }
+
+  .science {
+    top: 55.6rem;
+    left: 32rem;
+    position: absolute;
+  }
+
+  .total_science{
+    top: 56.7rem;
+    left: 32rem;
+    position: absolute;
+  }
+
+  .total {
+    top: 58rem;
+    left: 32rem;
+    position: absolute;
+  }
+
+  // Result Summary 
+  .status {
+    bottom: 13.5rem;
+    right: 9rem;
+    position: absolute;
+  }
+
+  .division {
+    bottom: 10rem;
+    right: 9rem;
+    position: absolute;
+  }
+
+  .total_in_words {
+    bottom: 7.1rem;
+    left: 12rem;
+    position: absolute;
+  }
+
+  .date_of_publication {
+    bottom: 2rem;
+    left: 9rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    position: absolute;
+  }
+
+
+  // Preview Button (optional if used)
+  .preview-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}
+
+// @media print {
+
+//   html,
+//   body {
+//     width: 100%;
+//     height: 100%;
+//     margin: 0;
+//     padding: 0;
+//     overflow: hidden;
+//   }
+
+//   @page {
+//     size: A4 portrait;
+//     margin: 0;
+//   }
+
+//   .certificate-print-area {
+//     transform: scale(0.95); // scale more to stay safe
+//     transform-origin: top left;
+//     background-image: none !important;
+//     box-shadow: none;
+//   }
+
+  
+// }
+@media print {
+  html, body {
+    font-size: 16px !important; // 👈 Force 1rem = 1px in print too
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+    @page {
+    size: 21.2cm 29cm; // ⬅️ exact match with container
+    margin: 0;
+  }
+
+  // .certificate-print-area {
+  //    width: 21cm;
+  //   height: 29.7cm;
+  //   transform: scale(0.95); // scale more to stay safe
+  //   transform-origin: top left;
+  //   background-image: none !important;
+  //   box-shadow: none;
+  // }
+  .certificate-molvi-art{
+    width: 21.2cm;
+    height: 29cm;
+    transform: none !important;
+    transform-origin: top left;
+    background-image: none !important; // optional if printing without background
+    box-shadow: none;
+  }
+}

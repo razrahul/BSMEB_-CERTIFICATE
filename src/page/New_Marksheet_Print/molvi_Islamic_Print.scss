@@ -1,0 +1,277 @@
+:root {
+  font-size: 16px;
+}
+
+.certificate-islamic-wrapper {
+  position: relative;
+  width: 21.2cm;
+  height: 29cm;
+  margin: 0 auto;
+}
+
+.pdf-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  // z-index: 0;
+}
+
+
+.certificate-molvi-islamic {
+  position: relative;
+  width: 21.2cm; // A4 width at 96dpi
+  height: 29cm; // A4 height at 96dpi
+  margin: 0 auto;
+    // background-image: url("../../assets/faq-marksheet.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Times New Roman', serif;
+  color: #000;
+  overflow: hidden;
+  box-sizing: border-box;
+  page-break-after: avoid;
+
+
+
+
+  //ms no & yaer
+    .ms_no {
+    top: 5.3rem;
+    right: 5.8rem;
+    position: absolute;
+    }
+    .year {
+    top: 19.8rem;
+    right: 9.5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    position: absolute;
+    }
+
+    // Personal Info
+    .tex-dec {
+    font-weight: bold;
+    font-size: 1rem;
+    }
+    .tex-dec1 {
+    font-weight: bold;
+    font-size: 0.9rem;
+    }
+   .name {
+    top: 22.6rem;
+    left: 17rem;
+    position: absolute;
+  }
+
+  .father-name {
+    top: 24.5rem;
+    left: 17rem;
+    position: absolute;
+  }
+
+  .mother-name {
+    top: 26.3rem;
+    left: 17rem;
+    position: absolute;
+  }
+
+  .registration-no {
+    top: 28.2rem;
+    left: 17rem;
+    position: absolute;
+  }
+
+  .roll-no {
+    top: 28.2rem;
+    left: 36.1rem;
+    position: absolute;
+  }
+
+  .madrasa {
+    top: 29.9rem;
+    left: 17rem;
+    position: absolute;
+  }
+
+  .dob {
+    top: 32.8rem;
+    left: 17rem;
+    position: absolute;
+  }
+
+    // // Marks Section
+    // .diniyat1 { top: 410px; left: 635px; position: absolute; }
+    // .diniyat2 { top: 435px; left: 635px; position: absolute; }
+    // .diniyat3 { top: 460px; left: 635px; position: absolute; }
+    // .total { top: 485px; left: 635px; position: absolute; }
+
+    // .arabic { top: 515px; left: 635px; position: absolute; }
+    // .urdu { top: 540px; left: 635px; position: absolute; }
+    // .socialstudy { top: 565px; left: 635px; position: absolute; }
+    // .mathematics { top: 590px; left: 635px; position: absolute; }
+    // .science { top: 615px; left: 635px; position: absolute; }
+
+    // .hindi, .english, .persian {
+    //   top: 640px;
+    //   left: 635px;
+    //   position: absolute;
+    // }
+
+    .diniyat1 {
+    top: 38.5rem;
+    left: 32rem;
+    position: absolute;
+    }
+
+    .diniyat2 {
+    top: 40.3rem;
+    left: 32rem;
+    position: absolute;
+    }
+    .diniyat3{
+      top: 42.3rem;
+      left: 32rem;
+      position: absolute;
+    }
+    .total_diniyat {
+    top: 43.8rem;
+    left: 32rem;
+    position: absolute;
+    }
+    
+    .arabic {
+    top: 45.5rem;
+    left: 32rem;
+    position: absolute;
+    }
+    .urdu {
+    top: 47.3rem;
+    left: 32rem;
+    position: absolute;
+    }
+    .tarikh_e_islam {
+    top: 49rem;
+    left: 32rem;
+    position: absolute;
+    }
+    
+    .islamic_pol_eco {
+    top: 50.6rem;
+    left: 32rem;
+    position: absolute;
+    }
+
+    .english_hindi_persian {
+    top: 54.3rem;
+    left: 32rem;
+    position: absolute;
+    }
+
+  
+    .total {
+    top: 56rem;
+    left: 32rem;
+    position: absolute;
+    }
+
+    // Result Summary 
+      .status {
+    top: 51rem;
+    right: 8.3rem;
+    position: absolute;
+  }
+
+  .division {
+    top: 54.5rem;
+    right: 8.3rem;
+    position: absolute;
+  }
+
+  .total_in_words {
+    top: 57.9rem;
+    left: 12rem;
+    position: absolute;
+  }
+
+  .date_of_publication {
+    bottom: 4.2rem;
+    left: 9rem; 
+    font-weight: bold;
+    font-size: 1.1rem;
+    position: absolute;
+  }
+
+
+    // Preview Button (optional if used)
+    .preview-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    }
+
+
+}
+// @media print {
+
+//   html,
+//   body {
+//     width: 100%;
+//     height: 100%;
+//     margin: 0;
+//     padding: 0;
+//     overflow: hidden;
+//   }
+
+//   @page {
+//     size: A4 portrait;
+//     margin: 0;
+//   }
+
+//   .certificate-print-area {
+//     transform: scale(0.95); // scale more to stay safe
+//     transform-origin: top left;
+//     background-image: none !important;
+//     box-shadow: none;
+//   }
+
+
+
+  
+// }
+@media print {
+  html, body {
+    font-size: 16px !important; // 👈 Force 1rem = 1px in print too
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .pdf-bg {
+    display: none !important;
+  }
+
+    @page {
+    size: 21.2cm 29cm; // ⬅️ exact match with container
+    margin: 0;
+  }
+
+  // .certificate-print-area {
+  //    width: 21cm;
+  //   height: 29.7cm;
+  //   transform: scale(0.95); // scale more to stay safe
+  //   transform-origin: top left;
+  //   background-image: none !important;
+  //   box-shadow: none;
+  // }
+  .certificate-molvi-islamic{
+    width: 21.2cm;
+    height: 29cm;
+    transform: none !important;
+    transform-origin: top left;
+    background-image: none !important; // optional if printing without background
+    box-shadow: none;
+  }
+}

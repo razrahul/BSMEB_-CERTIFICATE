@@ -1,0 +1,133 @@
+/* Certificate.scss */
+.certificate-print-area {
+  position: relative;
+  width: 21cm;
+  height: 29.7cm;
+  font-family: 'Times New Roman', serif;
+  font-size: 14px;
+  color: #000;
+  padding: 0;
+  margin: 0;
+  page-break-after: avoid;
+}
+
+/* Name & Personal Info */
+.name {
+  position: absolute;
+  top: 5.9cm;
+  left: 4.6cm;
+}
+
+.father-name {
+  position: absolute;
+  top: 6.4cm;
+  left: 4.6cm;
+}
+
+.mother-name {
+  position: absolute;
+  top: 7.0cm;
+  left: 4.6cm;
+}
+
+.registration-no {
+  position: absolute;
+  top: 7.6cm;
+  left: 4.6cm;
+}
+
+.roll-no {
+  position: absolute;
+  top: 7.6cm;
+  left: 12cm;
+}
+
+.madrasa {
+  position: absolute;
+  top: 8.2cm;
+  left: 4.6cm;
+}
+
+/* Marks Section (You can fine-tune these values after a test print) */
+.diniyat1 {
+  position: absolute;
+  top: 11.2cm;
+  left: 13.9cm;
+}
+
+.diniyat2 {
+  position: absolute;
+  top: 11.8cm;
+  left: 13.9cm;
+}
+
+.diniyat3 {
+  position: absolute;
+  top: 12.4cm;
+  left: 13.9cm;
+}
+
+.total {
+  position: absolute;
+  top: 13.0cm;
+  left: 13.9cm;
+}
+
+.urdu {
+  position: absolute;
+  top: 13.6cm;
+  left: 13.9cm;
+}
+
+.persian {
+  position: absolute;
+  top: 14.2cm;
+  left: 13.9cm;
+}
+
+.hindi {
+  position: absolute;
+  top: 14.8cm;
+  left: 13.9cm;
+}
+
+.english {
+  position: absolute;
+  top: 15.4cm;
+  left: 13.9cm;
+}
+
+.socialstudy {
+  position: absolute;
+  top: 16.0cm;
+  left: 13.9cm;
+}
+
+.mathematics {
+  position: absolute;
+  top: 16.6cm;
+  left: 13.9cm;
+}
+
+.science {
+  position: absolute;
+  top: 17.2cm;
+  left: 13.9cm;
+}
+
+/* Printing only the data — no buttons, no forms */
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .certificate-print-area {
+    visibility: visible;
+  }
+
+  .input-form,
+  button {
+    display: none !important;
+  }
+}

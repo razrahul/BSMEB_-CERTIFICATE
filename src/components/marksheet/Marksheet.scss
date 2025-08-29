@@ -1,0 +1,122 @@
+/* src/components/Marksheet.scss */
+.marksheet {
+  width: 210mm;
+  height: 297mm;
+  margin: 0 auto;
+  position: relative;
+  font-family: serif;
+  font-size: 14px;
+
+  
+  overflow: hidden;
+  page-break-after: avoid;
+
+  .common {
+    font-weight: bold;
+    padding-top: 200px;
+  }
+
+  .name {
+    position: absolute;
+    top: 58mm;
+    left: 45mm;
+  }
+
+  .father-name {
+    position: absolute;
+    top: 64mm;
+    left: 45mm;
+  }
+
+  .mother-name {
+    position: absolute;
+    top: 70mm;
+    left: 45mm;
+  }
+
+  .reg-no {
+    position: absolute;
+    top: 76mm;
+    left: 45mm;
+  }
+
+  .roll-no {
+    position: absolute;
+    top: 76mm;
+    left: 120mm;
+  }
+
+  .madrasa {
+    position: absolute;
+    top: 82mm;
+    left: 45mm;
+  }
+
+  .diniyat1 {
+    position: absolute;
+    top: 112mm;
+    left: 140mm;
+  }
+
+  .diniyat2 {
+    position: absolute;
+    top: 118mm;
+    left: 140mm;
+  }
+
+  .diniyat3 {
+    position: absolute;
+    top: 124mm;
+    left: 140mm;
+  }
+
+  .total {
+    position: absolute;
+    top: 130mm;
+    left: 140mm;
+  }
+
+  .urdu {
+    position: absolute;
+    top: 136mm;
+    left: 140mm;
+  }
+
+  .persian {
+    position: absolute;
+    top: 142mm;
+    left: 140mm;
+  }
+  .hindi {
+    position: absolute;
+    top: 148mm;
+    left: 140mm;
+  }
+  .english {
+    position: absolute;
+    top: 154mm;
+    left: 140mm;
+  }
+  .socialstudy {
+    position: absolute;
+    top: 160mm;
+    left: 140mm;
+  }
+  .mathematics {
+    position: absolute;
+    top: 166mm;
+    left: 140mm;
+  }
+  .science {
+    position: absolute;
+    top: 172mm;
+    left: 140mm;
+  }
+  .aggregate {
+    position: absolute;
+    top: 178mm;
+    left: 140mm;
+  }
+
+  // Add more field positions as needed...
+}
