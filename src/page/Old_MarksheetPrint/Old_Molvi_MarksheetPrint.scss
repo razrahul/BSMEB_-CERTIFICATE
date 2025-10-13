@@ -4,7 +4,7 @@
 
 .Old_Molvi_MarksheetPrint-wrapper {
   position: relative;
-  width: 19cm;      // ✅ Actual paper width
+  width: 19.3cm;      // ✅ Actual paper width
   height: 25.4cm;   // ✅ Actual paper height
   margin: 0 auto;
 
@@ -17,7 +17,7 @@
 
 .Old_Molvi_MarksheetPrint {
   position: relative;
-  width: 19cm;
+  width: 19.3cm;
   height: 25.4cm;
   margin: 0 auto;
   font-family: 'Times New Roman', serif;
@@ -40,44 +40,44 @@
   // Student Info
   .name {
     position: absolute;
-    top: 7.83cm;     // 20.4rem → 8.63cm
-    left: 8.88cm;    // 21rem → 8.88cm
+    top: 8.70cm;     // 20.4rem → 8.63cm
+    left: 8.68cm;    // 21rem → 8.88cm
   }
 
   .father-name {
     position: absolute;
-    top: 9cm;     // 23.5rem → 9.94cm
-    left: 7.18cm;    // 17rem → 7.18cm
+    top: 9.725cm;     // 23.5rem → 9.94cm
+    left: 7cm;    // 17rem → 7.18cm
   }
 
   .roll-code {
     position: absolute;
-    top: 9cm;     // 23.5rem
-    left: 13.59cm;   // 34.5rem → 14.59cm
+    top: 9.725cm;     // 23.5rem
+    left: 12.1cm;   // 34.5rem → 14.59cm
   }
 
   .roll-no {
     position: absolute;
-    top: 9cm;     // 23.5rem
-    left: 16.62cm;   // 43.3rem → 18.32cm
+    top: 9.725cm;     // 23.5rem
+    left: 15cm;   // 43.3rem → 18.32cm
   }
 
   .dob {
     position: absolute;
-    top: 10.21cm;    // 26.5rem
-    left: 6.35cm;    // 15rem
+    top: 10.81cm;    // 26.5rem
+    left: 6cm;    // 15rem
   }
 
   .madrasa {
     position: absolute;
-    top: 12.60cm;    // 32.7rem
-    left: 5.81cm;    // 15rem
+    top: 12.852cm;    // 32.7rem
+    left: 5cm;    // 15rem
   }
 
   .year {
     position: absolute;
-    top: 13.75cm;     // 35.7rem
-    left: 6.35cm;    // 15rem
+    top: 13.85cm;     // 35.7rem
+    left: 6cm;    // 15rem
     font-weight: bold;
     font-size: 14pt;
   }
@@ -85,8 +85,8 @@
   // Result Summary
   .status {
     position: absolute;
-    top: 11.43cm;    // 29.6rem
-    left: 14.65cm;   // 38.1rem
+    top: 11.75cm;    // 29.6rem
+    left: 12.8cm;   // 38.1rem
   }
 
   .optional {
@@ -99,8 +99,8 @@
 
   .date_of_publication {
     position: absolute;
-    top: 24.18cm;    // 62.7rem
-    left: 7cm;    // 17.5rem
+    top: 22.05cm;    // 62.7rem
+    left: 6cm;    // 17.5rem
     font-weight: bold;
     font-size: 14pt;
   }
@@ -130,12 +130,12 @@
   }
 
   @page {
-    size: 19cm 25.4cm;   // ✅ exact paper size
+    size: 19.3cm 25.4cm;   // ✅ exact paper size
     margin: 0;
   }
 
   .Old_Molvi_MarksheetPrint {
-    width: 19cm;
+    width: 19.3cm;
     height: 25.4cm;
     transform: none !important;
     transform-origin: top left;

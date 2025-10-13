@@ -37,7 +37,7 @@ const Old_Faq_MarksheetPrint = () => {
         >
           <Page
             pageNumber={1}
-            width={720}
+            width={730}
             renderTextLayer={false}
             renderAnnotationLayer={false}
           />
@@ -57,7 +57,7 @@ const Old_Faq_MarksheetPrint = () => {
 
         {/* 📊 Result Summary */}
         <div className="status tex-dec">{safeText(data.status)}</div>
-        <div className="optional ">{safeText(data.optional)}</div>
+        {/* <div className="optional ">{safeText(data.optional)}</div> */}
         <div className="date_of_publication">
           {formatDate(data.publicationDate)}
         </div>

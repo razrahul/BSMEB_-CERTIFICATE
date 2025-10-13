@@ -53,7 +53,7 @@ const Old_Faq_MarksheetPrint = () => {
         <div className="roll-code tex-dec">{safeText(data.code)}</div>
         <div className="roll-no tex-dec">{safeText(data.rollNo)}</div>
         <div className="madrasa tex-dec">{safeText(data.madrasa)}</div>
-        <div className="dob tex-dec">{formatDate(data.dob)}</div>
+        <div className="dob tex-dec">{safeText(data.dob)}</div>
 
         {/* 📊 Result Summary */}
         <div className="status tex-dec">{safeText(data.status)}</div>

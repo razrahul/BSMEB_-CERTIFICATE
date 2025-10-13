@@ -82,7 +82,7 @@ const Old_MarksheetPage = () => {
                 id={key}
                 name={key}
                 value={value}
-                type={key === "dob" ? "date" : "text"}
+                type= "text"
                 onChange={handleInfoChange}
               />
             </div>
